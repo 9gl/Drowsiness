@@ -8,7 +8,7 @@ NOTE: It is highly recommended to use jupyter notebook to run this code due to i
 
 ## Model Creation:
 
-Inside the "https://github.com/altaga/DBSE-monitor/tree/master/Drowsiness/Model" folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests.
+Inside the "https://github.com/9gl/driver_drowsiness_detection/blob/main/Model" folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests.
 
 However the model can be trained by yourself with the code called "train.py" in the folder "https://github.com/altaga/DBSE-monitor/tree/master/Drowsiness/train".
 
