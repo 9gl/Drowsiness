@@ -9,7 +9,6 @@ import time
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import threading
-### Changes
 from pygame import mixer
 from os.path import dirname, join
 
@@ -17,7 +16,6 @@ current_dir = dirname(__file__)
 
 file = 'alarm.mp3'
 
-### Changes
 mixer.init()
 
 mixer.music.load(join(current_dir,file))
