@@ -8,9 +8,9 @@ NOTE: It is highly recommended to use jupyter notebook to run this code due to i
 
 ## Model Creation:
 
-Inside the "https://github.com/9gl/driver_drowsiness_detection/blob/main/Model" folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests.
+Inside the https://github.com/9gl/driver_drowsiness_detection/blob/main/Model folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests.
 
-However the model can be trained by yourself with the code called "train.py" in the folder "https://github.com/altaga/DBSE-monitor/tree/master/Drowsiness/train".
+However the model can be trained by yourself with the code called "train.py" in the folder "https://github.com/9gl/driver_drowsiness_detection/blob/main/train".
 
 The database that was used, is a database with 4846 images of left and right eyes, open and closed, where approximately half are open and closed so that the network was able to identify the state of the eyes, the database is in the following folder, it is a **.zip** file unzip before starting the training:
 
