@@ -1,6 +1,6 @@
 # Laptop Test:
 
-To test the code on a computer, you should have previously followed the instructions at https://github.com/9gl/driver_drowsiness_detection/testing.md.
+To test the code on a computer, you should have previously followed the instructions at https://github.com/9gl/driver_drowsiness_detection/blob/main/testing.md.
 
 Open the Notebook.ipynb file in a jupyter notebook or the notebook.py file in any IDE that supports python.
 
