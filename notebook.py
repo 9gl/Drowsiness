@@ -9,26 +9,20 @@ import time
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import threading
-#import vlc
 ### Changes
 from pygame import mixer
 from os.path import dirname, join
 
 current_dir = dirname(__file__)
 
-# Alarm sound file
 file = 'alarm.mp3'
-# Sound player start
-#p = vlc.MediaPlayer(current_dir+'/'+file)
 
 ### Changes
 mixer.init()
 
-mixer.music.load(current_dir+'/'+file)
+mixer.music.load(join(current_dir,file))
 
 mixer.music.set_volume(0.7)
-
-so = 0
 
 timebasedrow= time.time()
 timebasedis= time.time()
@@ -142,18 +136,15 @@ def drow(images, model_name):
                         image = cv2.imread(current_dir+'/temp-images/display.jpg')
                         image = cv2.putText(image, 'Distracted', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
                         cv2.imwrite(current_dir+'/temp-images/display.jpg',image)
-                        if(not(so)):
+                        if(not(mixer.music.get_busy())):
                             mixer.music.play()
-                            so = 1
                 else:
                     mixer.music.stop()
-                    so = 0        
         else:
             timerundrow= time.time()
             if((timerundrow-timebasedrow)>3):
-                if(not(so)):
+                if(not(mixer.music.get_busy())):
                     mixer.music.play()
-                    so = 1
                 image = cv2.imread(current_dir+'/temp-images/display.jpg')
                 image = cv2.putText(image, 'Drowsy', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
                 cv2.imwrite(current_dir+'/temp-images/display.jpg',image)
