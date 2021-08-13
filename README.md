@@ -14,7 +14,7 @@ However the model can be trained by yourself with the code called "train.py" in 
 
 The database that was used, is a database with 4846 images of left and right eyes, open and closed, where approximately half are open and closed so that the network was able to identify the state of the eyes, the database is in the following folder, it is a **.zip** file unzip before starting the training:
 
-https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness/train/dataset/dataset_B_Eye_Images.zip
+https://github.com/9gl/driver_drowsiness_detection/blob/main/train/dataset/dataset_B_Eye_Images.zip
 
 The training has the following parameters as input.
 
