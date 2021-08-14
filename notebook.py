@@ -177,5 +177,3 @@ m = threading.Thread(target=main, name='main')
 
 d.start()
 m.start()
-
-##abc
