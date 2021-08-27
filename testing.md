@@ -28,7 +28,7 @@ https://pytorch.org/
     
 The other packages we need are the following:
 
-    pip install opencv-python matplotlib tqdm python-vlc Pillow
+    pip install opencv-python matplotlib tqdm pygame Pillow
     
 Anyway we attach the file requirements.txt where all packages come in our environment.
 
